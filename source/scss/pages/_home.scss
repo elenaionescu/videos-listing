@@ -1,0 +1,21 @@
+body {
+  background-color: $vplayer--black-md;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  @import "../components/alphabetMenu";
+
+  .listings {
+    padding: 20px;
+
+    @import "../components/nav";
+    @import "../components/video";
+
+    .row {
+      @include row();
+    }
+
+  }
+
+}

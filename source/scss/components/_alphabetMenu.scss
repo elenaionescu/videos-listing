@@ -1,0 +1,59 @@
+$alphabet--size-lg: 48px;
+
+.alphabet.menu {
+  width: 100%;
+  color: $vplayer--white;
+  background-color: $vplayer--black-lt;
+  overflow-x: auto;
+
+  @media only screen and (max-width: 768px) {
+    overflow-x: scroll;
+  }
+
+  span {
+    display: block;
+    color: $vplayer--grey;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  ul {
+    height: 100px;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    font-size: 0;
+
+    li {
+      display: table-cell;
+      font-size: $alphabet--size-lg;
+      vertical-align: middle;
+      padding: 0.1em;
+
+      &:hover{
+        a {
+          color: $vplayer--pink;
+          font-size: 160%;
+        }
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        color: $vplayer--white;
+
+        transition: all 0.2s ease-out;
+
+        &.selected {
+          color: $vplayer--pink;
+          font-size: 160%;
+        }
+      }
+    }
+  }
+}

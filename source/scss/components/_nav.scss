@@ -1,0 +1,35 @@
+.nav {
+  position: relative;
+  width: 100%;
+
+  padding: 0 15px;
+
+  a {
+    text-decoration: none;
+    color: $vplayer--pink;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .prev{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .next {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .current {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: $vplayer--grey;
+  }
+
+  @include clearfix();
+
+}

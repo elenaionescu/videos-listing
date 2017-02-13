@@ -1,0 +1,17 @@
+<div class="nav">
+  {{#prev}}
+  <div class="prev">
+    <a id="nav-prev" href="#{{section}}?page={{prevPage}}">< Prev</a>
+  </div>
+  {{/prev}}
+
+  <div class="current">
+    Page {{page}} of {{totalPages}}
+  </div>
+
+  {{#next}}
+  <div class="next">
+    <a id="nav-next" href="#{{section}}?page={{nextPage}}">Next ></a>
+  </div>
+  {{/next}}
+</div>

@@ -1,0 +1,6 @@
+<div class="video">
+  <a href="{{link}}"><img src="{{image}}</a>" />
+  <span>{{headline}}</span>
+  <span>{{duration}}</span>
+  <h1>{{section}}</h1>
+</div>
